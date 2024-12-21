@@ -1,0 +1,17 @@
+[package]
+name = "wtransport-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wtransport = { version = "0.5.0", git = "https://github.com/BiagioFesta/wtransport.git", rev = "7d257831ac7e407f316a42bf28455e733ceeed24" }
+log = "0.4.19"
+pem = "3.0.4"
+thiserror = "2.0.3"
+anyhow = "1.0.71"
+tokio = { version = "1.28.1", features = ["rt-multi-thread"] }
+tokio-util = "0.7.8"
+tracing = "0.1.37"
+tracing-subscriber = { version = "0.3.17", features = ["env-filter"] }
